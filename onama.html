@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleOnama.css">
+    <link rel="stylesheet" href="./css/flipTimer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Home</title>
+    <script src="./js/onama.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="./js/jquery.flipTimer.js"></script>
+    <title>O nama</title>
 </head>
 <body>
     <div class="logo">
@@ -14,7 +19,6 @@
     <nav id="meni">
         <img class="logo" src="./images/logo1.png">
         <ul>
-            
             <li ><a class="active" href="index.html">Početna stranica</a></li>
             <li><a href="jelovnik.html">Jelovnik</a></li>
             <li><a href="kontakt.html">Kontakt i rezervacije</a></li>
@@ -24,23 +28,45 @@
           
 
     </nav>
-
+    <br><br><br><br>
     <div>
       
 
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit libero, vitae ipsum excepturi distinctio doloremque dolorem? Assumenda vel, praesentium ad velit sit vitae quod quis maiores vero maxime hic! Ducimus!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nesciunt unde aliquam consequatur dicta nulla ad repellat, omnis, inventore, corporis adipisci quibusdam quam incidunt laboriosam dolorum aspernatur et maiores sunt.</p>
-        <p>Steakhouse Holycow! je prvi indonezijski restoran na Balkanu. U našem steakhouse-u pružaml Vam prelepa iskustva uz koje smo odrasli: od našeg toplog gostoprimstva, preko autentičnih aroma iz naše otvorene kuhinje, do naših ručno rađenih recepata, a sve uz pažljivo sveže i najkvalitetnije namirnice. Holycow! steakhouse poseduje komore kapaciteta 10 tona za suvo zrenje mesa i po tome se svrstava u najviši svetski rang po kvalitetu i obradi mesa.</p>
+        
+        <p>Steakhouse Holycow! je prvi indonezijski restoran na Balkanu. <br> U našem steakhouse-u pružaml Vam prelepa iskustva uz koje smo odrasli: od našeg toplog gostoprimstva, <br>preko autentičnih aroma iz naše otvorene kuhinje, do naših ručno rađenih recepata, a sve uz pažljivo sveže i najkvalitetnije namirnice.<br> Holycow! steakhouse poseduje komore kapaciteta 10 tona za suvo zrenje mesa i po tome se svrstava u najviši svetski rang po kvalitetu i obradi mesa.</p>
+        
+   
+   
     </div>
 
-    <div>
+    <div id="noviRestoran">
+        <h1>Uskoro otvaramo novi restoran!</h1>
+
+        <table class="countdownContainer" hidden=true>
+            <tr class="info">
+                <td colspan="4"> </td>
+            </tr>
+            <tr>
+                <td id="dani">120</td>
+                <td id="sati">20</td>
+                <td id="minuti">50</td>
+                <td id="sekunde">49</td>
+            </tr>
+            <tr class="info">
+                <td>Dani</td>
+                <td>Sati</td>
+                <td>Minuti</td>
+                <td>Sekunde</td>
+            </tr>
+        </table>
+
 
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptatibus ipsa cumque debitis esse atque asperiores natus magni nihil explicabo laboriosam ab voluptas at aut possimus accusamus iusto laudantium sed!</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non unde explicabo obcaecati dolore? Unde, expedita, ab itaque velit culpa reprehenderit minus architecto vero eos nostrum explicabo fugiat porro eligendi a.</p>
     </div>
 
-
+    <br><br>
     <div class="footer">
 
         <div class="kolonaFooter">

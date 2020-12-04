@@ -1,0 +1,49 @@
+h2{
+    text-align: center;
+    padding: 10px;
+}
+#pozadina{
+    background-color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 1px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#rezervacije, #utisci{
+    margin-top: 20px;
+    height: 500px;
+    width: 400px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    
+    text-align: justify;
+    font-family: 'Palatino Linotype', Helvetica, sans-serif;
+    font-size: 15px;
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 50px;
+    padding: 10px;  
+    
+  
+}
+.flex-parent {
+    display: flex;
+  }
+  
+  .jc-center {
+    justify-content: center;
+  }
+  
+  input.margin-right {
+    margin-right: 10px;
+  }
+
+

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleKontakt.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Home</title>
+    <title>Kontakt i rezervacije</title>
 </head>
 <body>
     <div class="logo">
@@ -25,18 +26,60 @@
 
     </nav>
 
-    <div>
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae libero quisquam eos nesciunt magnam laboriosam sunt culpa cupiditate ducimus provident. Doloremque consequatur repellendus laboriosam sint. Cupiditate numquam consequatur repellendus ex.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit libero, vitae ipsum excepturi distinctio doloremque dolorem? Assumenda vel, praesentium ad velit sit vitae quod quis maiores vero maxime hic! Ducimus!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nesciunt unde aliquam consequatur dicta nulla ad repellat, omnis, inventore, corporis adipisci quibusdam quam incidunt laboriosam dolorum aspernatur et maiores sunt.</p>
-    </div>
+    <div id="pozadina">
 
-    <div>
+        <div class="inline" id="rezervacije">
+            <form>
+                <h2>REZERVACIJE</h2>
+                
+                Ime i prezime: <input type="text" name="imeiprezime" required> <br> <br>
+                Datum: <input type="date" name="datum" required> <br> <br>
+                Vreme: <input type="time" name="vreme" required> <br> <br>
+                Broj osoba: <input type="broj" name="number" required> <br> <br>
+                Kontakt telefon: <input type="number" name="kontakt" required> <br> <br>
+                Izbor stola - zona: <br>
+                <input type="radio" name="zona1"> Nepušačka zona
+                <input type="radio" name="zona2"> Pušačka zona<br>
+                <br>
+                Lokacija:
+                <select name="selectPolje">
+                    <option value="Beograd">Beograd, Centar</option>
+                    <option value="Zemun">Beograd, Zemun</option>
+                </select> 
+                <br> <br>
+                <br>
+                <div class="flex-parent jc-center">
+                    <input type="submit" class= "margin-right" name="Potvrda" value="Potvrdi rezervaciju">
+                    <input type="reset" name="Ponistavanje" value="Izbriši">
+                </div>
+                
+            </form>  
+         </div>
 
+         <div class="inline" id="utisci">
+            <form>
+                <h2>KNJIGA UTISAKA</h2>
+                
+                Ime i prezime: <input type="text" name="imeiprezime" required> <br> <br>
+                E-mail adresa: <input type="email" name="email" required> <br> <br>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptatibus ipsa cumque debitis esse atque asperiores natus magni nihil explicabo laboriosam ab voluptas at aut possimus accusamus iusto laudantium sed!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non unde explicabo obcaecati dolore? Unde, expedita, ab itaque velit culpa reprehenderit minus architecto vero eos nostrum explicabo fugiat porro eligendi a.</p>
+               
+                    <label>Vaši utisci:</label><br>
+                    <textarea id = "textBox" 
+                            rows = "10"
+                            cols = "40">Ovde unesite Vaš tekst...</textarea>
+                 
+                <br>
+                <input type="checkbox" name="checkbox"> Da li želite da primate e-mejlove <br> sa našim posebnim ponudama? <br>
+                <br> <br>
+                <div class="flex-parent jc-center">
+                    <input type="submit" class= "margin-right" name="Potvrda" value="Pošalji">
+                    <input type="reset" name="Ponistavanje" value="Izbriši">
+                </div>
+              
+            </form>  
+         </div>
+         
     </div>
 
     <div class="footer">

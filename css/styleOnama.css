@@ -1,0 +1,27 @@
+
+
+h1{
+
+  text-align: center;
+  color: #b71f25;
+}
+
+p{
+  text-align: center;
+}
+#noviRestoran{
+  border: solid 2px black;
+  
+}
+
+.countdownContainer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  background-color:#b71f25 ;
+  padding: 10px;
+  box-shadow: 0 0 5px 3 px black;
+}
+
