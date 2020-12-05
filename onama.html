@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/styleOnama.css">
-    <link rel="stylesheet" href="./css/flipTimer.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./js/onama.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/flipdown/flipdown.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="./js/jquery.flipTimer.js"></script>
+ 
     <title>O nama</title>
 </head>
 <body>
@@ -29,40 +32,34 @@
 
     </nav>
     <br><br><br><br>
-    <div>
-      
 
-        
-        <p>Steakhouse Holycow! je prvi indonezijski restoran na Balkanu. <br> U našem steakhouse-u pružaml Vam prelepa iskustva uz koje smo odrasli: od našeg toplog gostoprimstva, <br>preko autentičnih aroma iz naše otvorene kuhinje, do naših ručno rađenih recepata, a sve uz pažljivo sveže i najkvalitetnije namirnice.<br> Holycow! steakhouse poseduje komore kapaciteta 10 tona za suvo zrenje mesa i po tome se svrstava u najviši svetski rang po kvalitetu i obradi mesa.</p>
-        
+    <h1>Nešto malo o nama..</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <p><strong>Steakhouse Holycow!</strong> je prvi indonezijski restoran na Balkanu.  U našem steakhouse-u pružamo Vam  prelepa iskustva uz koje smo odrasli: od našeg toplog gostoprimstva, preko autentičnih aroma iz naše otvorene kuhinje, do naših ručno rađenih recepata, a sve uz pažljivo sveže i najkvalitetnije namirnice. <br><strong>Holycow! steakhouse</strong> poseduje komore kapaciteta 10 tona za suvo zrenje mesa i po tome se svrstava u najviši svetski rang po kvalitetu i obradi mesa.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsam, quasi veniam voluptates mollitia hic rem recusandae quo, odio voluptas doloribus dicta. Commodi incidunt fugit cumque ut dignissimos natus enim.</p>
+        </div>
+          
+        <div class ="grid-item">
+            <img src="./images/restoran_the_view_crystal_hotel.jpg" alt="">
+        </div>
    
    
     </div>
+    
 
+
+    <hr>
     <div id="noviRestoran">
         <h1>Uskoro otvaramo novi restoran!</h1>
+        <h3>Odbrojavanje je počelo..</h3>
+        <div id="flipdown" class="flipdown"></div>
+        <br>
+        
+        
 
-        <table class="countdownContainer" hidden=true>
-            <tr class="info">
-                <td colspan="4"> </td>
-            </tr>
-            <tr>
-                <td id="dani">120</td>
-                <td id="sati">20</td>
-                <td id="minuti">50</td>
-                <td id="sekunde">49</td>
-            </tr>
-            <tr class="info">
-                <td>Dani</td>
-                <td>Sati</td>
-                <td>Minuti</td>
-                <td>Sekunde</td>
-            </tr>
-        </table>
-
-
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptatibus ipsa cumque debitis esse atque asperiores natus magni nihil explicabo laboriosam ab voluptas at aut possimus accusamus iusto laudantium sed!</p>
+        <p>Uskoro otvaramo restoran na novoj lokaciji!</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non unde explicabo obcaecati dolore? Unde, expedita, ab itaque velit culpa reprehenderit minus architecto vero eos nostrum explicabo fugiat porro eligendi a.</p>
     </div>
 
@@ -93,8 +90,6 @@
         </div>
         
     </div>
-
-
 
 </body>
 </html>
