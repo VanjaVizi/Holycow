@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/styleKontakt.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Kontakt i rezervacije</title>
 </head>
@@ -32,14 +33,16 @@
             <form>
                 <h2>REZERVACIJE</h2>
                 
-                Ime i prezime: <input type="text" name="imeiprezime" required> <br> <br>
-                Datum: <input type="date" name="datum" required> <br> <br>
-                Vreme: <input type="time" name="vreme" required> <br> <br>
-                Broj osoba: <input type="broj" name="number" required> <br> <br>
-                Kontakt telefon: <input type="number" name="kontakt" required> <br> <br>
+                Ime i prezime: <input type="text" id="imeiprezime2" name="imeiprezime"> <br> <br>
+                Datum: <input id="datum" type="date" name="datum"> <br> <br>
+                Vreme: <input type="time" name="vreme"> <br> <br>
+                Broj osoba: <input id="broj" type="number" name="broj"> <br> <br>
+                Kontakt telefon: <input type="text" name="kontakt"> <br> <br>
                 Izbor stola - zona: <br>
-                <input type="radio" name="zona1"> Nepušačka zona
-                <input type="radio" name="zona2"> Pušačka zona<br>
+                <input type="radio" id="zona1" name="zona" value="zona1">
+                <label for="zona1">Nepušačka zona</label><br>
+                <input type="radio" id="zona2" name="zona" value="zona2">
+                <label for="zona2">Pušačka zona</label><br>
                 <br>
                 Lokacija:
                 <select name="selectPolje">
@@ -49,7 +52,7 @@
                 <br> <br>
                 <br>
                 <div class="flex-parent jc-center">
-                    <input type="submit" class= "margin-right" name="Potvrda" value="Potvrdi rezervaciju">
+                    <input type="submit" class= "margin-right" name="Potvrda" value="Potvrdi rezervaciju" onclick="funkcija2()">
                     <input type="reset" name="Ponistavanje" value="Izbriši">
                 </div>
                 
@@ -60,20 +63,20 @@
             <form>
                 <h2>KNJIGA UTISAKA</h2>
                 
-                Ime i prezime: <input type="text" name="imeiprezime" required> <br> <br>
-                E-mail adresa: <input type="email" name="email" required> <br> <br>
+                Ime i prezime: <input id="imeiprezime" type="text" name="imeiprezime"> <br> <br>
+                E-mail adresa: <input id="email" type="email" name="email"> <br> <br>
 
                
                     <label>Vaši utisci:</label><br>
                     <textarea id = "textBox" 
                             rows = "10"
-                            cols = "40">Ovde unesite Vaš tekst...</textarea>
+                            cols = "40" placeholder="Ovde unesite vaš tekst..."></textarea>
                  
                 <br>
                 <input type="checkbox" name="checkbox"> Da li želite da primate e-mejlove <br> sa našim posebnim ponudama? <br>
                 <br> <br>
                 <div class="flex-parent jc-center">
-                    <input type="submit" class= "margin-right" name="Potvrda" value="Pošalji">
+                    <input type="submit" class= "margin-right" name="Potvrda" value="Pošalji" onclick="funkcija1()">
                     <input type="reset" name="Ponistavanje" value="Izbriši">
                 </div>
               
@@ -110,6 +113,7 @@
     </div>
 
 
-
 </body>
+
+<script  src="./js/scriptKontakt.js"></script>
 </html>

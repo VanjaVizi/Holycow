@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // Unix timestamp (in seconds) to count down to
-  var openningDay = (new Date(2020,11,26).getTime() / 1000); 
+  var openningDay = (new Date(2020,11,26).getTime() / 1000);  //vraca vreme u sekundama
   //var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1;
 
   // Set up FlipDown
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Do something when the countdown ends
     .ifEnded(() => {
-      console.log('The countdown has ended!');
+      console.log('Novi restoran je otvoren!');
     });
 
   

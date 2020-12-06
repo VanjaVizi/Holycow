@@ -47,19 +47,3 @@ img{
   padding: 20px;
   text-align: center;
 }
-#mapa h1{
-  text-align: center;
-}
-#mapa {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin: 45px;
-  padding: 10px;
- 
-
-}
-.lokacija{
-  border: none;
-  padding: 20px;
-  text-align: center;
-}

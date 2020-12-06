@@ -2,6 +2,8 @@
 body{
     position: relative;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(#bb383c,lightgray);
+    background-repeat: no-repeat;
 }
 #meni{
     width: 100%;
@@ -63,7 +65,7 @@ body{
     position: absolute;
     background-color: black;
     color:white;
-    font-size: smaller;
+   font-size: medium;
     width: 100%;
   
 }
@@ -84,13 +86,10 @@ body{
     align-items: baseline;
 }
 
-
-
 .fa {
     padding: 10px;
     font-size: 30px;
     width: 30px;
-    
     text-align: center;
     text-decoration: none;
     
