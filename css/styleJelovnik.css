@@ -14,14 +14,23 @@
 }
 
 .izbor div img {
-  width: 90%;
-  height: auto;
+  width: 300px;
+  height: 250px;
   padding-top: 5px;
-  margin: auto auto;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
 }
 
 h1 {
+  padding-top: 15px;
   margin-top: 50px;
+  text-align: center;
 }
 
 hr {
@@ -38,6 +47,11 @@ hr {
   margin-left: 50px;
   padding: auto auto;
   align-self: center;
+  
+}
+
+.kutija h2{
+  text-align: center;
 }
 
 .kutija div {
@@ -45,20 +59,31 @@ hr {
   background-color: slategray;
   display: inline-block;
   min-width: 100%;
+  text-align: center;
+  padding-bottom: -10px;
+ 
 }
 
 .kutija div img {
-  width: 20%;
-  height: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 300px;
+  height: 250px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
   float: left;
 }
 
-#prvi {
-  display: flex;
+
+
+.izbor div{
+  display: grid;
+  text-align: center;
 }
 
 #btn1, #btn2, #btn3, #btn4 {
@@ -69,6 +94,7 @@ hr {
   max-height: 30px;
   margin-left: 25%;
   margin-right: 25%;
+  margin-bottom: 15px;
 }
 
 p{
