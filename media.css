@@ -41,5 +41,8 @@
         font-size: 15px;
     }
 
-   
+   #rezervacije, #utisci{
+       width: 90%;
+       margin-left: 0px;
+   }
 }
