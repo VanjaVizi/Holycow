@@ -1,101 +1,99 @@
-
 body{
-    position: relative;
+    margin:0; /*od kad sam ovo stavila ne treba mi width:100%  ni u meniju*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: linear-gradient(#bb383c,lightgray);
     background-repeat: no-repeat;
 }
 #meni{
-    width: 100%;
-    background-color: #000000;
-}
-#meni ul {
-    list-style-type: none;
-    margin: 0;
-    padding:9px;
-    overflow: hidden;
-    font-size: large;
-    float: right;
-    
-    
-}
-  
-#meni li {
-    float: left;
-    color: white;
-}
-#meni li a{
-    display: block;
-    color: white;
-    text-align: center; 
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-#meni li a:hover {
-    background-color: #111;
-}
-#meni{
-    position: fixed;
-    top: 0;
-    width:100%;
-    left:0;
-    right: 0;
-}
-.logo {
-    display: inline-block;
-    vertical-align: top;
-    width: 6%;
-    margin-top: 5px;
-    margin-left: 30px;
-    
-}
-
-
-
-#naslovna img{
-   margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 0px;
-    margin-top: 10px;
-    padding-top: 55px;
-    padding-bottom: 0px;
-    padding-left: 160px;
-    padding-right: 160px;
-
-    width: 900px;
-    height: 550px;
-    text-align: center;
-}
-
-.footer{
-    position: absolute;
+    display:grid;
+    padding-right: 20px; /*da odvoji od desne ivice ekrana*/
+    grid-auto-flow: column;
     background-color: black;
     color:white;
-   font-size: medium;
-    width: 100%;
-  
-}
-.footer p{
-    font-size: medium;
 }
 
-.footer ul{
-    list-style-type: none;
-    
+#linkovi ul{
+    display:grid;
+    justify-content: end;
+    align-content: center;
+    grid-auto-flow: column;
+    list-style: none;
     
 }
-.kolonaFooter{
-    float: left;
-    width: 33.33%;
-    padding: 0px;
+#linkovi li{
+    padding:15px; 
+    font-size: 18px;
+}
+#linkovi a{
+    text-decoration: none;
+    color:white;
+}
+#linkovi li:hover{
+    background-color: rgb(104, 103, 103);
+}
+
+#logo {
+    display: grid;
+    justify-content: start;
+    align-content: center;
+}
+#logo img{
+    padding-left: 20px;
+    width:10%;
+}
+
+#naslovna img{
+     margin-left: 50px;
+     margin-right: 50px;
+     margin-bottom: 0px;
+     margin-top: 0px;
+     padding-top: 0px;
+     padding-bottom: 0px;
+     padding-left: 160px;
+     padding-right: 160px;
+     width: 900px;
+     height: 550px;
+     text-align: center;
+ }
+
+ .footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #000000;
+    padding: 10px;
+    
+}
+  
+ .footer > div {
+    background-color: #000000;
+    color:#fff;
     text-align: center;
-    align-items: baseline;
+    padding: 10px 0;
+    font-size: 15px;
+    text-align: center;
+  }
+.footer ul{
+    list-style-type: none;
+}
+.footer a{
+    text-decoration: none;
+    color:white;
+
+}
+.footer a:hover{
+    color:#bb383c;
+
+}
+
+
+/*Ovo su one ikone za drustvene mreze(to je sve ovo sa klasom .fa)*/
+.footer .fa{
+    font-size:30px; 
 }
 
 .fa {
     padding: 10px;
-    font-size: 30px;
     width: 30px;
     text-align: center;
     text-decoration: none;
@@ -122,3 +120,18 @@ body{
 
 
 
+@media (max-width: 800px) {
+    
+
+    /*Responzivnost za futer*/
+   
+    /*pogledaj kako su podeseni divovi u futeru, stoje svi u jednom redu, 3 kolone(3 diva)*/
+    .footer > div { /*kada smanjimo prozor na manje od 800px svi divovi u futeru treba da se pretvore u kolonu koja ce biti siroka 3 kolone(zbog span=3)*/
+      grid-column: span 3;
+    }
+  
+    /*Responzivost za meni*/
+    
+    
+  }
+  
