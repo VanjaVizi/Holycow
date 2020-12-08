@@ -19,7 +19,7 @@ function funkcija1() {
     return false;
 
   }
-  //utisak ne sme da budeprazan string ili da bude duzi od npr 250 karaktera (ovo mozemo i da obrisemo)
+  //utisak ne sme da bude prazan string ili da bude duzi od npr 250 karaktera (ovo mozemo i da obrisemo)
   if(utisak==="" || utisak.length()>250){
     alert("Pogrešan unos! Unesi neki utisak kraći od 250 karaktera!");
     return false;
@@ -52,7 +52,7 @@ function funkcija2() {
   //meseci se broje od nule, pa se oduzima 1 
   datumRezervacije = new Date(parseInt(elementiDatuma[0]),parseInt(elementiDatuma[1]-1),parseInt(elementiDatuma[2]));
 
-  let brojSekundiDoDanaRezervacije = datumRezervacije.getTime(); 
+  let brojSekundiDoDanaRezervacije = datumRezervacije.getTime(); //vreme u milisekundama
   let preostaloVreme =brojSekundiDoDanaRezervacije- danas.getTime(); 
   //alert(preostaloVreme);
   if (imePrezime === "" || !imePrezime.includes(" ")) {

@@ -16,20 +16,18 @@
     <title>O nama</title>
 </head>
 <body>
-    <nav id="meni">
-        <div id="logo">
-            <img class="logo" src="./images/logo1.png">
-        </div>
-        <div id="linkovi">
-            <ul>
-                <li ><a class="active" href="index.html">Početna stranica</a></li>
-                <li><a href="jelovnik.html">Jelovnik</a></li>
-                <li><a href="kontakt.html">Kontakt i rezervacije</a></li>
-                <li><a href="onama.html">O nama</a></li>
-              </ul>
-        </div>
-        
-          
+   
+    <nav>
+        <ul class="menu">
+            <li class="logo">HolyCow!</li>
+            <li class="toggle"><span class="bars"></span></li>
+            <li class="nav-item" ><a class="active" href="index.html">Početna stranica</a></li>
+            <li class="nav-item"><a href="jelovnik.html">Jelovnik</a></li>
+            <li  class="nav-item"><a href="kontakt.html">Kontakt i rezervacije</a></li>
+            <li class="nav-item"><a href="onama.html">O nama</a></li>
+            
+          </ul>
+
 
     </nav>
     
@@ -56,15 +54,11 @@
         <h1>Uskoro otvaramo novi restoran!</h1>
         <h3>Odbrojavanje je počelo..</h3>
         <div id="flipdown" class="flipdown"></div>
-        <br>
-        
-        
-
-        <p>Uskoro otvaramo restoran na novoj lokaciji!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non unde explicabo obcaecati dolore? Unde, expedita, ab itaque velit culpa reprehenderit minus architecto vero eos nostrum explicabo fugiat porro eligendi a.</p>
+        <br><br><br><br>
     </div>
+   
 
-    <br><br>
+    
     <div class="footer">
         <div class="footerItem">
             <ul>
@@ -91,4 +85,15 @@
     </div>
 
 </body>
+<script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".nav-item").hasClass("active")) {
+            $(".nav-item").removeClass("active");
+        } else {
+            $(".nav-item").addClass("active");
+        }
+    });
+});
+    </script>
 </html>

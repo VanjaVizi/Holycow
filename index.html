@@ -5,33 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/styleIndex.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home</title>
 </head>
 <body>
-        
-    </div>
     
-    <nav id="meni" class="meni">
-        <div id="logo">
-            <img class="logo" src="./images/logo1.png">
-        </div>
-        <div id="linkovi">
-            <ul>
-                <li ><a class="active" href="index.html">Početna stranica</a></li>
-                <li><a href="jelovnik.html">Jelovnik</a></li>
-                <li><a href="kontakt.html">Kontakt i rezervacije</a></li>
-                <li><a href="onama.html">O nama</a></li>
-              </ul>
-        </div>
-        
-          
+
+
+    <nav>
+        <ul class="menu">
+            <li class="logo">HolyCow!</li>
+            <li class="toggle"><span class="bars"></span></li>
+            <li class="nav-item" ><a class="active" href="index.html">Početna stranica</a></li>
+            <li class="nav-item"><a href="jelovnik.html">Jelovnik</a></li>
+            <li  class="nav-item"><a href="kontakt.html">Kontakt i rezervacije</a></li>
+            <li class="nav-item"><a href="onama.html">O nama</a></li>
+            
+            
+          </ul>
+
 
     </nav>
+
+
+    </div>
+
+    
     
     <div id="naslovna">
         <br>
-        <img src="./images/c9d7e896-4b7b-445c-b6ad-4c283065d132.jfif" alt="">
+        <img id="naslovnaSlika" src="./images/c9d7e896-4b7b-445c-b6ad-4c283065d132.jfif" alt="">
     </div>
 
     <div>
@@ -48,7 +52,7 @@
             </tr>
             <tr>
                 <td>
-                    jelo 1
+                  Ćevapi
                 </td>
                 <td>
                     1000din
@@ -57,7 +61,7 @@
             </tr>
             <tr>
                 <td>
-                    jelo 2
+                    Leskovački uštipci
                 </td>
                 <td>
                     2000din
@@ -65,7 +69,7 @@
             </tr>
             <tr>
                 <td>
-                    jelo 2
+                    Ćuretina sa mlincima
                 </td>
                 <td>
                     1500din
@@ -73,7 +77,7 @@
             </tr>
             <tr>
                 <td>
-                    jelo 4
+                    Čizkejk
                 </td>
                 <td>
                     750din
@@ -114,8 +118,21 @@
         </div>  
       
     </div>
-
-    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".nav-item").hasClass("active")) {
+            $(".nav-item").removeClass("active");
+        } else {
+            $(".nav-item").addClass("active");
+        }
+    });
+});
+    </script>
 
 
 

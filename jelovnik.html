@@ -6,32 +6,29 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/styleJelovnik.css">
+    <link rel="stylesheet" href="./css/media.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/jelovnik.js"></script>
     <title>Home</title>
 </head>
 <body>
-    <div class="logo">
+    
+  <nav>
+    <ul class="menu">
+        <li class="logo">HolyCow!</li>
+        <li class="toggle"><span class="bars"></span></li>
+        <li class="nav-item" ><a class="active" href="index.html">Početna stranica</a></li>
+        <li class="nav-item"><a href="jelovnik.html">Jelovnik</a></li>
+        <li  class="nav-item"><a href="kontakt.html">Kontakt i rezervacije</a></li>
+        <li class="nav-item"><a href="onama.html">O nama</a></li>
         
-    </div>
-    <nav id="meni">
-      <div id="logo">
-          <img class="logo" src="./images/logo1.png">
-      </div>
-      <div id="linkovi">
-          <ul>
-              <li ><a class="active" href="index.html">Početna stranica</a></li>
-              <li><a href="jelovnik.html">Jelovnik</a></li>
-              <li><a href="kontakt.html">Kontakt i rezervacije</a></li>
-              <li><a href="onama.html">O nama</a></li>
-            </ul>
-      </div>
-      
-        
+      </ul>
+
 
   </nav>
 
   <h1>NAŠI SPECIJALITETI</h1>
+  <br><br>
   <div class="izbor">
     <div id="prvi">
       <img src="./images/biftek-1.jpg" alt="" />
@@ -64,7 +61,7 @@
   </div>
   <hr />
   <div class="kutija">
-    <h1>OSALO IZ NAŠE PONUDE</h1>
+    <h1>OSTALO IZ NAŠE PONUDE</h1>
     <div id="prvakutija">
       <img src="./images/ćevapi-Agropapuk-1.jpg" alt="" />
       <h2>Ćevapi</h2>
@@ -144,8 +141,6 @@
     </div>
   </div>
     <br><br><br>
-    <br><br><br>
-    <br>
     <div class="footer">
       <div class="footerItem">
           <ul>
@@ -171,7 +166,17 @@
     
   </div>
 
-
+  <script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".nav-item").hasClass("active")) {
+            $(".nav-item").removeClass("active");
+        } else {
+            $(".nav-item").addClass("active");
+        }
+    });
+});
+    </script>
 
 </body>
 </html>

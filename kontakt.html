@@ -5,28 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/styleKontakt.css">
+    <link rel="stylesheet" href="./css/media.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Kontakt i rezervacije</title>
 </head>
 <body>
-    <div class="logo">
-        
-    </div>
-    <nav id="meni">
-        <div id="logo">
-            <img class="logo" src="./images/logo1.png">
-        </div>
-        <div id="linkovi">
-            <ul>
-                <li ><a class="active" href="index.html">Početna stranica</a></li>
-                <li><a href="jelovnik.html">Jelovnik</a></li>
-                <li><a href="kontakt.html">Kontakt i rezervacije</a></li>
-                <li><a href="onama.html">O nama</a></li>
-              </ul>
-        </div>
-        
-          
+   
+    <nav>
+        <ul class="menu">
+            <li class="logo">HolyCow!</li>
+            <li class="toggle"><span class="bars"></span></li>
+            <li class="nav-item" ><a class="active" href="index.html">Početna stranica</a></li>
+            <li class="nav-item"><a href="jelovnik.html">Jelovnik</a></li>
+            <li  class="nav-item"><a href="kontakt.html">Kontakt i rezervacije</a></li>
+            <li class="nav-item"><a href="onama.html">O nama</a></li>
+            
+          </ul>
+
 
     </nav>
 
@@ -114,6 +110,16 @@
     </div>
 
 </body>
-
+<script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".nav-item").hasClass("active")) {
+            $(".nav-item").removeClass("active");
+        } else {
+            $(".nav-item").addClass("active");
+        }
+    });
+});
+    </script>
 <script  src="./js/scriptKontakt.js"></script>
 </html>

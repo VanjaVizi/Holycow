@@ -3,34 +3,34 @@
         flex-direction: column;
         margin-left: 0;
     }
-
+  
     .izbor div {
         width: 90%;
     }
-
+  
     .izbor div img{
         width: 90%;
     }
-
+  
     h1{
         font-size: 20px;
     }
-
+  
     .kutija{
         
         margin-left: 0;
     }
-
+  
     .kutija div{
         width: 90%;
     }
-
+  
     .kutija div img {
         padding:0 0 0 0;
         margin: 0 0 0 0;
         width: 100%;
     }
-
+  
     .kutija div {
         padding:0 0 0 0;
         margin-left: 0;
@@ -40,9 +40,32 @@
     p, h2, h3{
         font-size: 15px;
     }
+    #rezervacije, #utisci{
+        width: 90%;
+        margin-left: 0px;
+    }
+   
+  }
 
-   #rezervacije, #utisci{
-       width: 90%;
-       margin-left: 0px;
-   }
+
+@media (max-width:1200px){
+    #naslovnaSlika{
+        
+        padding-left:0;
+        margin-left: 0;
+        float:left;
+        width:300px ;
+    }
+    
+}
+
+
+
+@media (max-width:450px){
+    #pozadina{
+        font-size: 15px;
+    }
+    #textBox{
+        width: 200px;
+    }
 }

@@ -4,56 +4,118 @@ body{
     background-image: linear-gradient(#bb383c,lightgray);
     background-repeat: no-repeat;
 }
-#meni{
-    display:grid;
-    padding-right: 20px; /*da odvoji od desne ivice ekrana*/
-    grid-auto-flow: column;
-    background-color: black;
-    color:white;
-}
 
-#linkovi ul{
-    display:grid;
-    justify-content: end;
-    align-content: center;
-    grid-auto-flow: column;
-    list-style: none;
-    
-}
-#linkovi li{
-    padding:15px; 
-    font-size: 18px;
-}
-#linkovi a{
+nav {
+    background: black;
+    padding: 5px 20px;
+  
+  }
+nav  ul {
+    list-style-type: none;
+  }
+.nav-item:hover{
+      background-color: rgb(153, 148, 148);
+  }
+nav a {
+    color: white;
     text-decoration: none;
-    color:white;
 }
-#linkovi li:hover{
-    background-color: rgb(104, 103, 103);
+a:hover {
+    text-decoration: none;
+}
+ 
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+  }
+
+  
+  
+  /* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color:White;
 }
 
-#logo {
-    display: grid;
-    justify-content: start;
-    align-content: center;
+.toggle {
+   order:1;
+ 
+  
 }
-#logo img{
-    padding-left: 20px;
-    width:10%;
+ 
+.nav-item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
 }
+  .nav-item.active {
+    display: block;
+}
+  
+  /* Navbar Toggle */
+  .toggle {
+    cursor:pointer;
+  }
+  .bars {
+    background: white;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+  }
+  .bars:before,
+  .bars:after {
+    background:white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .bars:before {
+    top: 5px;
+  }
+  .bars:after {
+    top: -5px;
+  }
+  
+  
+  
+  /* Desktop menu */
+  @media all and (min-width: 650px) {
+    .menu{
+        display:flex;
+    }
+    .nav-item {
+        display: block;
+        width: auto;
+    }
+    .logo {
+        flex:1;
+    }
+    .toggle {
+        display: none;
+    }
+    
+    
+    .menu li {
+        padding: 15px 10px;
+    }
+    
+    
+  }
 
 #naslovna img{
-     margin-left: 50px;
-     margin-right: 50px;
-     margin-bottom: 0px;
-     margin-top: 0px;
-     padding-top: 0px;
-     padding-bottom: 0px;
-     padding-left: 160px;
-     padding-right: 160px;
-     width: 900px;
-     height: 550px;
-     text-align: center;
+    padding:0;
+    width:100%;
  }
 
  .footer {
@@ -130,7 +192,7 @@ body{
       grid-column: span 3;
     }
   
-    /*Responzivost za meni*/
+    
     
     
   }
