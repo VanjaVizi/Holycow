@@ -79,7 +79,14 @@ hr {
   float: left;
 }
 
+.kutija h3{
+  font-weight: lighter;
 
+}
+
+.kutija #zanimljivost1, #zanimljivost2, #zanimljivost3, #zanimljivost4{
+  font-style: italic;
+}
 
 .izbor div{
   display: grid;
