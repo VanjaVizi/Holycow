@@ -11,17 +11,17 @@ function funkcija1() {
     //Ako je prazan string znači da nista nije uneto
     //ako nema znak razmaka znaci da fali ili ime ili prezime
   if (imePrezime === "" || !imePrezime.includes(" ")) {
-    alert("Pogrešan unos!Unesi ime i prezime");
+    alert("Pogrešan unos! Unesi ime i prezime");
     return false;
   }
   if(email==="" || !email.includes('@')){
-    alert("Pogrešan unos!Unesi ispravan email!");
+    alert("Pogrešan unos! Unesi ispravan email!");
     return false;
 
   }
   //utisak ne sme da budeprazan string ili da bude duzi od npr 250 karaktera (ovo mozemo i da obrisemo)
   if(utisak==="" || utisak.length()>250){
-    alert("Pogrešan unos!Unesi neki utisak kraći od 250 karaktera!");
+    alert("Pogrešan unos! Unesi neki utisak kraći od 250 karaktera!");
     return false;
   } 
 
@@ -56,11 +56,11 @@ function funkcija2() {
   let preostaloVreme =brojSekundiDoDanaRezervacije- danas.getTime(); 
   //alert(preostaloVreme);
   if (imePrezime === "" || !imePrezime.includes(" ")) {
-    alert("Pogrešan unos!Unesi puno ime i prezime");
+    alert("Pogrešan unos! Unesi puno ime i prezime");
     return false;
   }
   if (isNaN(brojOsoba) || brojOsoba < 1 || brojOsoba>50) {
-      alert("Pogresan broj osoba!")
+      alert("Pogrešan broj osoba!")
       return false;
   } 
   if(preostaloVreme<0){
